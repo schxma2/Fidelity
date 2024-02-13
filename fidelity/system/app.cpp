@@ -1,5 +1,6 @@
 #include "app.h"
 #include "input.h"
+#include "graphics/primitives.h"
 App::App()
 {
     m_title = "Fidelity";
@@ -27,6 +28,7 @@ void App::Display()
     // for now this
     glClearColor(0.0, 0.0, 0.0, 0.0);
 	glClear(GL_COLOR_BUFFER_BIT);
+    Primitives::CreateCube();
 	glFlush();
 	glutSwapBuffers();
 	glutPostRedisplay();

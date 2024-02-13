@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
 	fidelity::DebugTools::Log(LogLevel::_ERROR, "3");
 	App app;
 	app.Init(argc , argv);
-
+	
 	fidelity_delete a;
 	delete b;
 	return 0;

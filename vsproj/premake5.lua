@@ -11,7 +11,7 @@ project "Fidelity"
     libdirs { "../3rdParty/freeglut/lib" }
     links { "freeglut.lib" }
     
-    includedirs { "../3rdParty" }
+    includedirs { "../3rdParty", "../fidelity" } 
 
     filter "configurations:Debug"
         defines { "DEBUG" }
