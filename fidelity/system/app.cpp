@@ -1,11 +1,11 @@
 #include "app.h"
-
+#include "input.h"
 App::App()
 {
     m_title = "Fidelity";
 }
 
-
+using fidelity::Input::Keyboard;
 App::~App()
 {
 }
@@ -17,6 +17,8 @@ void App::Init(int argc, char** argv)
     glutInitWindowSize(800, 600);
     glutCreateWindow(m_title);
     glutDisplayFunc(Display);
+    glutKeyboardFunc(Keyboard);
+
     glutMainLoop();
 }
 

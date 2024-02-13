@@ -1,6 +1,8 @@
 #include "system/log.h"
 #include "operators/new.h"
 #include "system/app.h"
+#include "system/types.h"
+#include "system/input.h"
 int main(int argc, char **argv) {
 
 	int* a = fidelity_new int(5);

@@ -8,6 +8,7 @@ enum class LogLevel {
 
 namespace fidelity {
 	namespace DebugTools {
-		void Log(LogLevel level, const char* message);
+		void Log(LogLevel level, const char* format, ...);
+		void Log(LogLevel level, const char* format, ...);
 	}
 }
